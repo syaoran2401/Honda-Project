@@ -1,0 +1,31 @@
+@mixin arrow($left, $right) {
+    content: "";
+    border-bottom: 15px solid white;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: $left;
+    right: $right;
+}
+
+@mixin text($fs, $fw, $mg) {
+    font-size: $fs;
+    font-weight: $fw;
+    margin-bottom: $mg;
+}
+
+@mixin sectionPadding {
+    padding: 0 $pd-7 / 2;
+}
+
+@mixin socialIcon {
+    width: 30px;
+    height: 30px;
+    background-color: $color-blue-1;
+    border-radius: 50%;
+    line-height: 30px;
+    color: $color-white;
+    font-size: $fs-1;
+    text-align: center;
+}

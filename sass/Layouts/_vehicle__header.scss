@@ -1,0 +1,148 @@
+.vehicle {
+    background-color: $bg-blue;
+    .container__config {
+        padding: 0 $pd-7;
+    }
+    .vehicle__content {
+        position: relative;
+        .vehicle__nav {
+            background-color: $color-white;
+            text-align: center;
+            padding: $pd-3 0;
+            ul {
+                list-style: none;
+                margin: 0;
+                li {
+                    display: inline;
+                    a {
+                        padding: $pd-1 $pd-4;
+                        font-weight: $fw-bold;
+                        color: $color-blue-5;
+                        border-right: $border-2;
+                        border-left: none;
+                        font-size: 1.4rem;
+                        &:hover {
+                            text-decoration: none;
+                            color: $color-blue-2;
+                        }
+                    }
+                    &.active {
+                        a {
+                            color: $color-blue-2;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+
+        #vehical__list {
+            background-color: $bg-gray;
+            padding: $pd-6;
+            padding-bottom: $pd-6 ;
+            max-height: 700px;
+            margin-left: 12px;
+            margin-right: 12px;
+            .vehicle__title {
+                h1 {
+                    position: relative;
+                    top: $mg-up-2;
+                    background-color: $bg-gray;
+                    color: $color-dark-blue-2;
+                    font-weight: $fw-bold;
+                    font-size: $fs-4;
+                    i {
+                        font-size: $fs-4 / 2;
+                        position: relative;
+                        top: $mg-up-1;
+                    }
+                    span {
+                        font-weight: $fw-normal;
+                    }
+                }
+            }
+
+            .vehical__product {
+                color: $color-dark-blue-2;
+                margin-bottom: $mg-2;
+                &:hover {
+                    .vehicle__img {
+                        .img__hover {
+                            display: block;
+                        }
+                        .img__page {
+                            display: none;
+                        }
+                    }
+                }
+                .vehicle__img {
+                    .img__hover {
+                        display: none;
+                    }
+                    h2 {
+                        font-size: $fs-2;
+                        font-weight: $fw-bold;
+                        margin-bottom: $mg-6;
+                    }
+
+                    .vehicle__info {
+                        margin-bottom: $mg-1 - 5;
+                        h3 {
+                            font-weight: $fw-normal;
+                            font-size: $fs-4;
+                        }
+                        p {
+                            font-size: $fs-1;
+                            margin-bottom: $mg-6;
+                        }
+                    }
+                }
+            }
+        }
+
+        #vehical__close{
+            position: absolute;
+            width: $vehical-close-width;
+            background-color: $bg-gray;
+            left: 89%;
+            padding: $pd-2 0;
+            text-align: center;
+            border-radius:0 7px 7px 0;
+            color: $color-blue-1;
+            cursor: pointer;
+            &:hover{
+                color: $color-dark-blue-1;
+                .vehical__circle{
+                    border: 1px solid $color-dark-blue-1;
+                }
+            }
+            .vehical__circle{
+                width: $vehical-circle-size;
+                height: $vehical-circle-size;
+                border: 1px solid $color-blue-1;
+                line-height: $vehical-circle-size;
+                border-radius: 50%;
+                text-align: center;
+                margin: auto;
+                i{
+                    
+                    font-size: $fs-1;
+                }
+            }
+                    p{
+                      
+                        font-size: $fs-1;
+                        font-weight: $fw-bold;
+                    }
+        }
+
+        .vehicle__nav__col{
+            padding: 0 27px;
+        }
+    }
+}
+
+
+.hide__vehicle{
+    display: none;
+}

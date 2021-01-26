@@ -1,0 +1,65 @@
+.intro{
+  
+    background-color: $bg-gray-3;
+    .intro__container{
+        @include sectionPadding;
+   
+        .intro__left, .intro__right{
+            height: 430px;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-clip: content-box;
+     
+            margin-top: $mg-up;
+        }
+
+        .intro__left{
+            // padding-right: 20px;
+            background-color: $color-black;
+            background-image: url('../img/our-vehicle-intro-1.jpg');
+            .intro__left__content{
+                color: $color-white;
+                text-align: center;
+                position: absolute;
+                bottom: 10%;
+                font-size: $fs-2;
+                h4{
+                    font-size: $fs-2;
+                    font-weight: $fw-bold;
+                    margin-bottom: $mg-1 - 5;
+                }
+                p{
+                    font-weight: $fw-300;
+                    margin: $mg-1 - 5;
+                    width: 92%;
+                    font-size: $fs-5;
+                }
+            }
+        }
+
+        .intro__right{
+            font-size: $fs-2;
+            background-image: url('../img/our-vehicles-intro-2.jpg');
+            .intro__right__content{
+                color: $color-white;
+                position: absolute;
+                top: 30%;
+                left: 8%;
+                font-size: $fs-2;
+                h4{
+                    font-weight: $fw-bold;
+                    background-color: $color-blue-3;
+                    display: inline-block;
+                    padding: $pd-2 - 5 ;
+                    margin-bottom: $mg-1 - 5;
+                }
+                p{
+                    width: 50%;
+                    font-weight: $fw-bold;
+                    margin-bottom: $mg-2;
+                }
+            }
+        }
+    }
+}

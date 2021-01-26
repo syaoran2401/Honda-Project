@@ -1,0 +1,113 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    #myNavbar {
+        background-color: $color-blue-1;
+        padding: 0;
+        a {
+            &:first-child {
+                padding: 0 $pd-4;
+            }
+            &:hover{
+                text-decoration: none;
+            }
+        }
+        #navbar-menu {
+            i {
+                margin-right: $mg-6;
+            }
+            // a{
+            //     &:hover{
+            //         color: white;
+            //     }
+            // }
+            .discover__menu{
+                left: unset;
+                right: -30%;
+                top: 42px;
+                width: 40rem;
+                padding:  $pd-4;
+                box-shadow: $box-shadow-1;
+                border: none;
+                &::before{
+                    @include arrow(unset,15%);
+                }
+                .dropdown-item{
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+                .dropdown__menu__detail{
+                    display: flex;
+                    h3{
+                        margin-bottom: $mg-2;
+                        color: $color-dark-blue-2;
+                        font-weight: $fw-bold;
+                    }
+                    div{
+                        width: 50%;
+                    }
+                    ul{
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        li{
+                            margin-bottom: $mg-1 - 5;
+                            a{
+                                color: $color-blue-2;
+                                border: none;
+                                padding: 0;
+                                font-weight: $fw-bold;
+                                font-size: $fs-1;
+                            }
+                        } 
+                    }
+                    .dropdown__detail__right{
+                        padding-left: $pd-3;
+                    } 
+                }
+
+                .dropdown__menu__social{
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: $mg-2;
+                    a{
+                        padding: 0;
+                        border:none;
+                        i{
+                          @include socialIcon;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #vehicle__link{
+        &:hover {
+            color: $color-blue-1;
+            background-color: $color-white;
+        }
+    }
+    #tools__link {
+        &:hover {
+            color: $color-blue-1;
+            background-color: $color-white;
+        }
+    }
+    a {
+        color: $color-white;
+        font-size: 17px;
+        padding: $pd-3 $pd-4;
+        border-right: $border-1;
+        border-left: $border-1;
+    }
+   
+}
+
+.no-border {
+    border: 0 !important;
+}

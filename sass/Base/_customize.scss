@@ -1,0 +1,88 @@
+header{
+    .animate__animated {
+        -webkit-animation-duration: .3s;
+        animation-duration: 0.3s;
+    }
+
+}
+
+
+@-webkit-keyframes fadeInDown{
+    from{
+        -webkit-transform: translate3d(0,-10%,0);
+        transform: translate3d(0,-10%,0);
+    }
+}
+@keyframes fadeInDown{
+    from{
+        -webkit-transform: translate3d(0,-10%,0);
+        transform: translate3d(0,-10%,0);
+    }
+}
+
+
+@-webkit-keyframes fadeInUp{
+    from{
+        -webkit-transform: translate3d(0,10%,0);
+        transform: translate3d(0,10%,0);
+    }
+}
+
+@keyframes fadeInUp{
+    from{
+        -webkit-transform: translate3d(0,10%,0);
+        transform: translate3d(0,10%,0);
+    }
+}
+
+
+
+
+@-webkit-keyframes fadeOutUp{
+    to{
+        -webkit-transform: translate3d(0,-10%,0);
+        transform: translate3d(0,-10%,0);
+    }
+}
+@keyframes fadeOutUp{
+    to{
+        -webkit-transform: translate3d(0,-10%,0);
+        transform: translate3d(0,-10%,0);
+    }
+}
+
+
+@-webkit-keyframes fadeOutDown{
+    to{
+        -webkit-transform: translate3d(0,10%,0);
+        transform: translate3d(0,10%,0);
+    }
+}
+
+@keyframes fadeOutDown{
+    to{
+        -webkit-transform: translate3d(0,10%,0);
+        transform: translate3d(0,10%,0);
+    }
+}
+
+
+// BS 4
+
+.carousel{
+    overflow: hidden;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 5%;
+}
+
+.carousel-control-next {
+    right: -12px ;
+}
+.carousel-control-prev {
+    left: -12px ;
+}
+
+.img-fluid{
+    width: 100% !important;
+}

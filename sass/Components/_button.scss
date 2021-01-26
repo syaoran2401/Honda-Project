@@ -1,0 +1,82 @@
+@mixin button($border, $bg, $color, $pd-y, $pd-x, $bg-hover, $color-hover) {
+    border: 2px solid $border;
+    border-radius: 40px;
+    background-color: $bg;
+    color: $color;
+    font-weight: $fw-bold;
+    padding: $pd-y $pd-x;
+    font-size: $fs-1;
+    cursor: pointer;
+    &:hover {
+        background-color: $bg-hover;
+        color: $color-hover;
+    }
+}
+
+
+.btn__vehicle{
+    @include button($color-blue-1,$color-blue-2 ,$color-white ,$pd-1, $pd-6, $color-white, $color-dark-blue-1);
+    margin-right: $mg-6;
+}
+
+.btn__vehicle__active{
+    @include button($color-blue-1,$color-white ,$color-blue-1,$pd-1, $pd-6, $color-blue-2, $color-white)
+}
+
+.btn__search{
+    @include button($color-blue-1,transparent ,$color-blue-1,$pd-1, $pd-6, $color-blue-2, $color-white);
+    margin-top: $mg-1 * -1;
+    @media screen and (max-width: 576px){
+        @include button($color-white,transparent ,$color-white,0, $pd-2, $color-white, $color-blue-2);
+        margin-top:0;
+        border-radius: 5px;
+    }
+    @media screen and (max-width: 768px){
+        @include button($color-white,transparent ,$color-white,0, $pd-2, $color-white, $color-blue-2);
+        margin-top:0;
+        border-radius: 5px;
+    }
+}
+
+.btn__carousel{
+    @include button($color-red-1,$color-red-1 , $color-white, $pd-1,$pd-2, $color-white, $color-red-1);
+
+}
+
+.btn__go{
+    @include button($color-blue-2, $color-blue-2, $color-white , $pd-1, $pd-2, transparent, $color-blue-1);
+}
+
+.btn__go__orange{
+    @include button($color-red-1, $color-red-1, $color-white , $pd-1, $pd-2, $color-white, $color-red-1);
+}
+
+
+
+.btn__build{
+    @include button($color-white, transparent, $color-white , $pd-1, $pd-2, $color-white, $color-blue-1);
+}
+
+.btn__caption{
+    padding: $pd-1 $pd-5;
+    @media screen and (max-width: 576px){
+        font-size: $fs-1 -0.2;
+        padding: $pd-1 $pd-3;
+    }
+}
+
+.btn__search__footer{
+    @include button($color-blue-1,transparent ,$color-blue-1,$pd-1, $pd-3, $color-blue-2, $color-white);
+    margin-top: $mg-1 * -1;
+    // @media screen and (max-width: 576px){
+    //     @include button($color-blue-1,transparent ,$color-white,0, $pd-2, $color-white, $color-blue-2);
+    //     margin-top:0;
+    //     border-radius: 5px;
+    // }
+    // @media screen and (max-width: 768px){
+    //     @include button($color-white,transparent ,$color-white,0, $pd-2, $color-white, $color-blue-2);
+    //     margin-top:0;
+    //     border-radius: 5px;
+    // }
+}
+

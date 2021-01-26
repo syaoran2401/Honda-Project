@@ -1,0 +1,121 @@
+@media screen and (min-width: 993px) and(max-width: 1200px) {
+    header {
+        #search__area {
+            padding: $pd-2;
+            input {
+                width: 78%;
+            }
+        }
+
+        #vehicles {
+            #vehical__close {
+                left: 88%;
+            }
+        }
+    }
+
+    .swiper__slider{
+        margin-top: $mg-4 - 5;
+    } 
+
+    .our__vehicle{
+        .carousel__caption__config{
+            width: 35%
+        }
+        .carousel__detail__content{
+            &:last-child{
+
+                max-width: 40%;
+            }
+        }
+
+        .function__container {
+            .pd__col{
+                .function{
+
+                    div{
+                       padding: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    .search__footer {
+        padding: 0 $pd-2;
+        #search__area {
+            div {
+                // padding: $pd-2;
+                width: 80%;
+                border: none;
+                border-right: none;
+                input {
+                    font-size: $fs-1;
+                    width: 75%;
+                    &::placeholder {
+                        font-size: $fs-2;
+                    }
+                }
+
+                .btn__search__footer{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .copy__right{
+        .copy__right__right{
+            ul{
+                li{
+                    padding: 0 $pd-2 - 4;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    #search__area {
+        input {
+            width: 81%;
+        }
+    }
+    .our__vehicle{
+        .function__container {
+            .pd__col{
+                .function{
+    
+                    div{
+                       padding: unset;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .search__footer {
+        padding: 0 $pd-2;
+        #search__area {
+            div {
+                // padding: $pd-2;
+                width: 85%;
+                border: none;
+                border-right: none;
+                input {
+                    font-size: $fs-1;
+                    width: 80%;
+                    &::placeholder {
+                        font-size: $fs-2;
+                    }
+                }
+
+
+                .btn__search__footer{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
